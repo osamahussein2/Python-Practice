@@ -44,3 +44,16 @@ print(two, four);
 # If there is a number variable and a string inside the print function, the program will print an error since
 # the program cannot convert a number variable to a string, and vice versa
 
+arrayOfList = [];
+arrayOfList.append(4);
+arrayOfList.append(12);
+arrayOfList.append(9);
+
+# Print the list seperately each time
+print(arrayOfList[0]);
+print(arrayOfList[1]);
+print(arrayOfList[2]);
+
+# Print the list all at once
+for listsDeclared in arrayOfList:
+    print(listsDeclared);
