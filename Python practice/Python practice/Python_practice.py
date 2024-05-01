@@ -57,3 +57,39 @@ print(arrayOfList[2]);
 # Print the list all at once
 for listsDeclared in arrayOfList:
     print(listsDeclared);
+
+arithmeticNumber = 3 + 4 * 5 / 4.0;
+print(arithmeticNumber);
+
+remainder = 47 % 4;
+print(remainder);
+
+powerOfTwo = 6 ** 2;
+print(powerOfTwo);
+
+powerOfFive = 6 ** 5;
+print(powerOfFive);
+
+# Using operators with strings
+
+hiThere = "Hi" + " " + "there!";
+print(hiThere);
+
+# Multiplying a string by any number will repeat that string to the console at that number
+
+repeatOsama = "Osama! " * 6;
+print(repeatOsama);
+
+# Making an operator of lists
+
+codingLanguages = ["C++ ", "C# ", "Python ", "Javascript "];
+number = [7, 4, 5, 9];
+
+stringNumbers = codingLanguages + number;
+print(stringNumbers);
+
+# Initializing a new list of repeating sequences
+
+repeatList = ["What? ", "Who? ", "Where? ", "Why? ", "How? "];
+print(repeatList * 4);
+
