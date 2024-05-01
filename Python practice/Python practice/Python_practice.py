@@ -117,3 +117,18 @@ numbers.append(8);
 for counter in numbers:
     print("Numbers list: %s" % counter)
 
+welcomeBack = "Welcome back to programming Python!";
+
+print(len(welcomeBack)); # len function counts how many characters there are in a string, including spaces
+print(welcomeBack.index("p")); # The index of this string finds where the character of the p letter first occurs at
+print(welcomeBack.count("o")); # The count function counts the number of o's in this string
+print(welcomeBack[10:18]); # Prints this string at the first index I defined to the last index I defined
+print(welcomeBack[20:34:3]); # Prints this string at the first index to last index but will skip 3 characters inside those indexes
+print(welcomeBack[::-1]); # Prints the reversed version of this string
+print(welcomeBack.upper()); # Prints the whole string using capital(uppercase) letters
+print(welcomeBack.lower()); # Prints the whole string using lowercase letters
+print(welcomeBack.startswith("Welcome")); # Checks if my string starts with a certain string (prints true or false)
+print(welcomeBack.endswith("py")); # Checks if my string end with a certain string (prints true or false)
+
+splitWelcomeBack = welcomeBack.split(); # Splits the string to a list of grouped characters
+print(splitWelcomeBack);
