@@ -93,3 +93,27 @@ print(stringNumbers);
 repeatList = ["What? ", "Who? ", "Where? ", "Why? ", "How? "];
 print(repeatList * 4);
 
+myName = "Osama"
+introduceName = "This is %s"
+
+print(introduceName % myName); # The % is for correctly formatting a string to the console
+
+# Using two or more argument specifiers to format strings and numbers (requires the use of parentheses)
+
+batmanArkhamSeries = "The Batman Arkham series has released";
+numberOfGames = 4;
+batmanArkhamGames = "Including Batman Arkham Asylum, Batman Arkham City, Batman Arkham Origins, and Batman Arkham Knight!"
+
+print("%s %d games. %s" % (batmanArkhamSeries, numberOfGames, batmanArkhamGames));
+
+# An object that isn't a string can be formatted using %s
+
+numbers = [];
+
+numbers.append(3);
+numbers.append(5);
+numbers.append(8);
+
+for counter in numbers:
+    print("Numbers list: %s" % counter)
+
