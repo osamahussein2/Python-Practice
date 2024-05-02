@@ -179,3 +179,39 @@ playingBatmanArkhamGame = "";
 
 if not playingBatmanArkhamGame:
     print("You're NOT playing the Batman Arkham games");
+
+# Prints the numbers randomized from 12 to 26
+for number in range(12, 27):
+    print(number);
+
+# Prints the numbers randomized from 10 to 19 but will increment by 3 each time instead of one by one
+for number2 in range(10, 20, 3):
+    print(number2);
+
+counter = 0;
+
+while counter < 10:
+    counter += 2;
+    print(counter);
+
+playerMoves = 0;
+
+while playerMoves >= 0:
+    playerMoves += 1;
+    print(playerMoves);
+
+    if playerMoves >= 5:
+        break;
+
+for num in range(7):
+
+    # If num is an odd number, then continue looping through the numbers
+    if num % 1 == 0:
+        continue;
+
+    print(num);
+
+# Else when this for loop above has finished, print to the console that we reached the final number in the loop
+else:
+    print("We reached the maximum number at " + str(num) + "!");
+
