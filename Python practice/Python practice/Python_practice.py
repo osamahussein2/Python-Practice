@@ -215,3 +215,28 @@ for num in range(7):
 else:
     print("We reached the maximum number at " + str(num) + "!");
 
+def decrementNumbers():
+    
+    number = 12;
+    
+    while number <= 12:
+        
+        number -= 2;
+        print(number);
+        
+        if number <= 0:
+            break;
+
+def SpiderManGamesYouLike(gameName, releaseMonth, releaseDay, releaseYear):
+
+    print("My favourite Spider-Man game was %s, which was released on %s %d, %d!" % (gameName, releaseMonth, releaseDay, releaseYear));
+
+def SubtractVector2(Vector2ax, Vector2ay, Vector2bx, Vector2by):
+
+    print("(" + str(Vector2ax) + "-" + str(Vector2bx) + ", " + str(Vector2ay) + "-" + str(Vector2by) + ")" +
+          " = (" + str(Vector2ax - Vector2bx) + ", " + str(Vector2ay - Vector2by) + ")");
+    return Vector2ax - Vector2bx, Vector2ay - Vector2by;
+
+decrementNumbers();
+SpiderManGamesYouLike("Spider-Man 2", "June", 29, 2004);
+SubtractVector2(7, 6, 2, 3);
