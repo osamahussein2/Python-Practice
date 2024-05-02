@@ -132,3 +132,50 @@ print(welcomeBack.endswith("py")); # Checks if my string end with a certain stri
 
 splitWelcomeBack = welcomeBack.split(); # Splits the string to a list of grouped characters
 print(splitWelcomeBack);
+
+# Boolean logic to determine if a variable expression will return true or false
+
+osamaNumber = 16;
+
+print("Does osama's number return 16? " + str(osamaNumber == 16)); # str converts an int variable to a string
+print("Does osama's number return greater than 20? " + str(osamaNumber > 20));
+
+firstPlayingBatmanArkhamGame = "Batman Arkham Asylum";
+secondPlayingBatmanArkhamGame = "Batman Arkham City";
+
+# Boolean operators inside the if statement, using and/or conditionals
+
+if firstPlayingBatmanArkhamGame == "Batman Arkham Asylum" and secondPlayingBatmanArkhamGame == "Batman Arkham City":
+    print("You're playing Batman Arkham Asylum and Batman Arkham City!")
+
+if firstPlayingBatmanArkhamGame == "Batman Arkham Asylum" or firstPlayingBatmanArkhamGame == "Batman Arkham City":
+    print("Using the or operator: you're either playing Batman Arkham Asylum or Batman Arkham City!")
+
+# The in operator checks if the object exists in the list
+
+if firstPlayingBatmanArkhamGame in ["Batman Arkham Asylum", "Batman Arkham City"]:
+    print("Using an iterator list: you're either playing Batman Arkham Asylum or Batman Arkham City!");
+
+# Python's conditional statements don't require open brackets, only code blocks
+
+if secondPlayingBatmanArkhamGame == "Batman Arkham City":
+    print("You ARE playing Batman Arkham City after Batman Arkham Asylum!")
+
+else:
+    print("You are NOT playing Batman Arkham City after Batman Arkham Asylum!")
+
+win1 = ["win"];
+win2 = ["win"];
+
+print(win1 == win2);
+
+# The is operator doesn't match the values of the variables but only the instances of the variables
+print(win1 is win2); # Prints false because the instance of win1 doesn't equal to win2
+
+# The not operator is the opposite of the double equal operator, meaning that it makes a statement false or inverts it
+print(not False);
+
+playingBatmanArkhamGame = "";
+
+if not playingBatmanArkhamGame:
+    print("You're NOT playing the Batman Arkham games");
