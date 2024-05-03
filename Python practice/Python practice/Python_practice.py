@@ -240,3 +240,29 @@ def SubtractVector2(Vector2ax, Vector2ay, Vector2bx, Vector2by):
 decrementNumbers();
 SpiderManGamesYouLike("Spider-Man 2", "June", 29, 2004);
 SubtractVector2(7, 6, 2, 3);
+
+class Osama:
+    good = "Good";
+
+    def GetYourOwnLife(self):
+        print("Get your own life!");
+
+osamaObject = Osama();
+print(Osama.good);
+
+osamaObject2 = Osama();
+osamaObject2.good = "Bad"; # Add another instance of the class and change its original string variable
+print(osamaObject2.good);
+
+osamaObject.GetYourOwnLife(); # Calling a function inside my class object
+
+class WriteStrings:
+
+    def __init__(self, string):
+        self.string = string;
+        
+    def returnWrittenString(self):
+        return self.string;
+
+writeSomethingHere = WriteStrings("The more I learn Python, the better!");
+print(writeSomethingHere.returnWrittenString());
