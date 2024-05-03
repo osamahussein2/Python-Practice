@@ -266,3 +266,26 @@ class WriteStrings:
 
 writeSomethingHere = WriteStrings("The more I learn Python, the better!");
 print(writeSomethingHere.returnWrittenString());
+
+# Dictionaries in Python allows you to store keys and values inside the square brackets instead of indexes
+
+ps2GamesPlayed = {
+    "Crash 'n' Burn" : "Released on November 15th, 2004!", 
+    "Crash Bandicoot: Wrath of Cortex" : "Released on October 30th, 2001!",
+    "Crash Twinsanity" : "Released on September 28th, 2004!"
+    }
+
+# Iterating over the dictionary, which doesn't keep the stored values in order (but iterates over key pairs)
+for gameName, releaseDate in ps2GamesPlayed.items():
+    print("PS2 games I played include %s. %s" % (gameName, releaseDate));
+
+# Delete some of my stored keys inside the dictionary
+del ps2GamesPlayed["Crash 'n' Burn"];
+ps2GamesPlayed.pop("Crash Bandicoot: Wrath of Cortex");
+
+# Print the PS2 games I played, including me deleting some keys from my defined dictionary
+print(ps2GamesPlayed);
+
+if "Crash 'n' Burn" not in ps2GamesPlayed:
+    print("I have removed Crash 'n' Burn from my PS2 games played list!");
+
